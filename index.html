@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gửi Thư</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(to bottom right, #ffe0e9, #fbe5ff);
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      header {
+        text-align: center;
+        padding: 2rem 1rem 1rem;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        color: #d96c6c;
+      }
+
+      .avatar {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid #fff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        margin: 1rem 0;
+      }
+
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .message {
+        max-width: 600px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 2px dashed #d96c6c;
+        padding: 1.5rem;
+        margin: 1rem;
+        border-radius: 15px;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        text-align: center;
+        backdrop-filter: blur(2px);
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 2rem;
+        width: 90%;
+        max-width: 1000px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      @media (max-width: 600px) {
+        .message {
+          font-size: 1rem;
+        }
+
+        header h1 {
+          font-size: 2rem;
+        }
+
+        .avatar {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Gửi Thư</h1>
+    </header>
+
+    <div class="avatar">
+      <!-- Thay link ảnh avatar của cô ấy tại đây -->
+      <img src="/assets/avatar.jpeg" alt="Ảnh của Thư" />
+    </div>
+
+    <div class="message">
+      Anh đã hối hận về việc làm của mình rồi.<br />
+      Mong em hãy tha lỗi cho anh.<br />
+      Anh yêu em, Thư.
+    </div>
+
+    <section class="gallery">
+      <!-- Thay các đường link ảnh dưới đây bằng ảnh kỷ niệm thật -->
+      <img src="/assets/memory1.jpeg" alt="Kỷ niệm 1" />
+      <img src="/assets/memory2.jpg" alt="Kỷ niệm 2" />
+      <img src="/assets/memory3.jpg" alt="Kỷ niệm 3" />
+      <img src="/assets/memory4.jpg" alt="Kỷ niệm 3" />
+    </section>
+
+    <footer>Chỉ mong có thể nhìn thấy nụ cười của em thêm lần nữa.</footer>
+  </body>
+</html>
